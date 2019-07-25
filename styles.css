@@ -1,3 +1,99 @@
+@import url('https://fonts.googleapis.com/css?family=Roboto:100,300,600');
+
 body {
-  font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif
+  font-family: 'Roboto', sans-serif;
+  font-weight: 300;
+  background: #000000;
+  color: #bbbbbb;
+  margin: 20px auto;
+  max-width: 1000px;
+}
+
+.logo {
+  font-size: 24pt;
+  font-weight: 300;
+  margin-bottom: 100px;
+}
+
+.logo strong {
+  font-weight: 600;
+}
+
+.logo div {
+  padding-bottom: 20px;
+  border-bottom: 1px solid rgba(255, 255, 255, 0.4);
+}
+
+.slogan {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-between;
+  margin-bottom: 100px;
+}
+
+.slogan div {
+  flex: 0.6;
+}
+
+.slogan img {
+  flex: 0.3;
+}
+
+.slogan h1 {
+  font-size: 60pt;
+  font-weight: 100;
+  margin: 0;
+  color: #00d8ca;
+}
+
+.slogan p {
+  font-size: 16pt;
+  line-height: 1.6;
+}
+
+nav ul {
+  padding: 0;
+  font-size: 16pt;
+  color: #ccc;
+  text-transform: uppercase;
+  list-style: none;
+}
+
+nav ul li {
+  display: inline-block;
+  border-bottom: 1px solid #666;
+  margin: 0 10px;
+}
+
+.how-we-work {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-between;
+  margin: 50px 0;
+}
+
+.how-we-work:nth-child(even) {
+  flex-direction: row-reverse;
+}
+
+.how-we-work img {
+  flex: 0.3;
+}
+
+.how-we-work div {
+  flex: 0.6;
+}
+
+.how-we-work h3 {
+  color: #00d8ca;
+  font-weight: 100;
+  font-size: 24pt;
+}
+
+.how-we-work p {
+  margin: 20px 0;
+  font-size: 16pt;
+  line-height: 1.6;
 }
