@@ -9,9 +9,14 @@ body {
   max-width: 1000px;
 }
 
+img.circular {
+  border-radius: 50%;
+}
+
 .logo {
+  color: #fff;
   font-size: 24pt;
-  font-weight: 300;
+  font-weight: 100;
   margin-bottom: 100px;
 }
 
@@ -66,7 +71,7 @@ nav ul li {
   margin: 0 10px;
 }
 
-.how-we-work {
+#how-we-work > div {
   display: flex;
   flex-direction: row;
   align-items: center;
@@ -74,26 +79,51 @@ nav ul li {
   margin: 50px 0;
 }
 
-.how-we-work:nth-child(even) {
+#how-we-work > div:nth-child(even) {
   flex-direction: row-reverse;
 }
 
-.how-we-work img {
+#how-we-work > div img {
   flex: 0.3;
 }
 
-.how-we-work div {
+#how-we-work > div div {
   flex: 0.6;
 }
 
-.how-we-work h3 {
+#how-we-work > div h3 {
   color: #00d8ca;
   font-weight: 100;
   font-size: 24pt;
 }
 
-.how-we-work p {
+#how-we-work > div p {
   margin: 20px 0;
   font-size: 16pt;
   line-height: 1.6;
+}
+
+#who-are-we > h2 {
+  color: #00d8ca;
+}
+
+#who-are-we > div {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-between;
+}
+
+#who-are-we > div div {
+  flex: 0.3;
+}
+
+#who-are-we > div h4 {
+  color: #eee;
+  text-align: center;
+}
+
+#who-are-we > div img {
+  margin: 0 5%;
+  width: 90%;
 }
