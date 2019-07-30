@@ -16,10 +16,10 @@
   
   <body>
     <header>
-      <div class="logo">
-        <div>code<strong>bonsai</strong></div>
+      <div id="logo">
+        <img src="img/bonsaicon.svg" alt="logo" /><span>code<strong>bonsai</strong></span>
       </div>
-      <div class="slogan">
+      <div id="slogan">
         <div>
           <h1>Software crafted <br/> with care.</h1>
           <p>
@@ -30,9 +30,9 @@
       </div>
       <nav>
         <ul>
-          <li>Services</li>
-          <li>About Us</li>
-          <li>Contact</li>
+          <li><a>Services</a></li>
+          <li><a href="#about-us">About Us</a></li>
+          <li><a href="#contact-us">Contact</a></li>
         </ul>
       </nav>
     </header>
@@ -66,7 +66,8 @@
           </div>
         </div>
       </section>
-      <section id="who-are-we">
+      <section id="about-us">
+        <a name="about-us"></a>
         <h2>Who are we?</h2>
         <div>
           <div>
@@ -93,16 +94,26 @@
         </div>
       </section>
       <section id="contact-us">
+        <a name="contact-us"></a> 
         <h2>Contact Us</h2>
         <form action="https://formspree.io/rodrigo@codebonsai.io" method="POST">
-          <input type="text" name="name">
-          <textarea name="message"></textarea>
-          <input type="submit" name="Send">
+          <div>
+            <label for="contact-us-name">Name:</label>
+            <input id="contact-us-name" type="text" name="name">
+          </div>
+          <div>
+            <label for="contact-us-email">E-mail:</label>
+              <input id="contact-us-email" type="text" name="email">
+            </div>
+          <div>
+            <label for="contact-us-message">Message:</label>
+            <textarea id="contact-us-message" name="message"></textarea>
+          </div>
+          <button role="submit" type="submit" name="send">Send!</button>
         </form>
       </section>
     </main>
     <footer>
-      <hr />
       © 2019 Codebonsai
       <div>Icons made by <a href="https://www.flaticon.com/authors/flat-icons" title="Flat Icons">Flat Icons</a> from <a href="https://www.flaticon.com/" title="Flaticon">www.flaticon.com</a> is licensed by <a href="http://creativecommons.org/licenses/by/3.0/" title="Creative Commons BY 3.0" target="_blank">CC 3.0 BY</a></div>
     </footer>
