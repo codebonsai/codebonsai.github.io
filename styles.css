@@ -9,6 +9,12 @@ body {
   max-width: 1000px;
 }
 
+h1,h2,h3 {
+  color: #00d8ca;
+  font-weight: 100;
+  font-size: 24pt;
+}
+
 img.circular {
   border-radius: 50%;
 }
@@ -47,9 +53,7 @@ img.circular {
 
 .slogan h1 {
   font-size: 60pt;
-  font-weight: 100;
   margin: 0;
-  color: #00d8ca;
 }
 
 .slogan p {
@@ -91,20 +95,10 @@ nav ul li {
   flex: 0.6;
 }
 
-#how-we-work > div h3 {
-  color: #00d8ca;
-  font-weight: 100;
-  font-size: 24pt;
-}
-
 #how-we-work > div p {
   margin: 20px 0;
   font-size: 16pt;
   line-height: 1.6;
-}
-
-#who-are-we > h2 {
-  color: #00d8ca;
 }
 
 #who-are-we > div {
