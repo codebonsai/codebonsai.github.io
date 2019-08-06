@@ -21,6 +21,10 @@ h1,h2,h3 {
   font-size: 24pt;
 }
 
+.hidden {
+  display: none;
+}
+
 img.circular {
   border-radius: 50%;
 }
@@ -137,7 +141,7 @@ img.circular {
 
 #contact-us form {
   width: 60%;
-  margin: 0 auto;
+  margin-left: 100px;
   text-align: right;
 }
 
@@ -151,7 +155,15 @@ img.circular {
   padding: 5px;
 }
 
-#contact-us div {
+#contact-us .error {
+  color: #c00;
+}
+
+#contact-us .success {
+  color: #00d8ca;
+}
+
+#contact-us .field {
   display: flex;
   flex-direction: row;
   align-items: center;
@@ -169,14 +181,45 @@ img.circular {
   flex: 0.8;
 }
 
+#contact-us .field .error {
+  position: absolute;
+  color: #c00;
+  left: 61%;
+}
+
 #contact-us textarea {
   height: 150px;
 }
 
-#contact-us button {
+#contact-us .submit button {
   background-color: #00d8ca;
   width: 20%;
   font-size: 16pt;
+  float: right;
+  margin-left: 10px;
+  height: 44px;
+}
+
+#contact-us .submit button img {
+  display: none;
+}
+
+#contact-us .submit button.disabled {
+  background-color: #ccc;
+  color: #aaa;
+}
+
+#contact-us .submit button.disabled span {
+  display: none;
+}
+
+#contact-us .submit button.disabled img {
+  display: inline;
+}
+
+#contact-us .submit .success, #contact-us .submit .error {
+  float: right;
+  line-height: 44px;
 }
 
 footer {

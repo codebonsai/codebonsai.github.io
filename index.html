@@ -92,22 +92,30 @@
         </div>
       </section>
       <section id="contact-us">
-        <a name="contact-us"></a> 
+        <a name="contact-us"></a>
         <h2>Contact Us</h2>
-        <form action="https://formspree.io/rodrigo@codebonsai.io" method="POST">
-          <div>
+        <p>Send us an e-mail message to <a href="mailto:info@codebonsai.io">info@codebonsai.io</a> or just use our contact form:</p>
+        <form action="http://ec2-35-160-211-153.us-west-2.compute.amazonaws.com/message" method="POST">
+          <div class="field">
             <label for="contact-us-name">Name:</label>
             <input id="contact-us-name" type="text" name="name">
+            <span class="error hidden">Please let us know your name.</span>
           </div>
-          <div>
+          <div class="field">
             <label for="contact-us-email">E-mail:</label>
-              <input id="contact-us-email" type="text" name="email">
-            </div>
-          <div>
+            <input id="contact-us-email" type="text" name="email">
+            <span class="error hidden">Please provide an e-mail address.</span>
+          </div>
+          <div class="field">
             <label for="contact-us-message">Message:</label>
             <textarea id="contact-us-message" name="message"></textarea>
+            <span class="error hidden">Please enter a contact message.</span>
           </div>
-          <button role="submit" type="submit" name="send">Send!</button>
+          <div class="submit">
+            <button role="submit" type="submit" name="send"><span>Send!</span><img src="img/spinner.gif" alt="spinner" /></button>
+            <span class="success hidden">Your message has been sent. We'll be in touch shortly.</span>
+            <span class="error hidden">An error ocurred while sending your message.</span>
+          </div>
         </form>
       </section>
     </main>
