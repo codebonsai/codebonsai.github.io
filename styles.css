@@ -6,7 +6,6 @@ body {
   color: #bbbbbb;
   scroll-behavior: smooth;
   background-color: #222;
-  background: linear-gradient( to bottom, #222, #444);
 }
 
 a {
