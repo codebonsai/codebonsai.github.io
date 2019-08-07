@@ -52,6 +52,7 @@ function sendContactMessage(name, email, message) {
 }
 
 function status(response) {
+  // TODO probar bien si esto hace lo que pensamos que hace
   if (response.status >= 200 && response.status < 300) {
     return Promise.resolve(response)
   } else {
