@@ -21,6 +21,14 @@ h1,h2,h3 {
   font-size: 24pt;
 }
 
+button:focus {
+  outline:none;
+}
+
+button::-moz-focus-inner {
+  border:0;
+}
+
 .hidden {
   display: none;
 }
@@ -77,7 +85,7 @@ img.circular {
 }
 
 #slogan img {
-  flex: 0.3;
+  flex: 0.4;
 }
 
 #slogan h1 {
