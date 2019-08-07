@@ -142,7 +142,6 @@ img.circular {
 #contact-us form {
   width: 60%;
   margin-left: 100px;
-  text-align: right;
 }
 
 #contact-us input, #contact-us textarea, #contact-us button {
@@ -169,6 +168,7 @@ img.circular {
   align-items: center;
   justify-content: space-between;
   margin: 10px 0;
+  position: relative;
 }
 
 #contact-us label {
@@ -183,8 +183,9 @@ img.circular {
 
 #contact-us .field .error {
   position: absolute;
-  color: #c00;
-  left: 61%;
+  left: 100%;
+  padding-left: 10px;
+  white-space: nowrap;
 }
 
 #contact-us textarea {
