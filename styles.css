@@ -74,11 +74,11 @@ header nav {
   text-transform: uppercase;
 }
 
-#logo nav a {
+header nav a {
   margin: 0 5px;
 }
 
-#logo nav a:hover {
+header nav a:hover {
   color: #fff;
   cursor: pointer;
 }
