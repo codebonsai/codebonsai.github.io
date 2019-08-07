@@ -5,8 +5,6 @@ body {
   font-weight: 300;
   background: #222;
   color: #bbbbbb;
-  margin: 20px auto;
-  max-width: 1000px;
   scroll-behavior: smooth;
 }
 
@@ -19,6 +17,10 @@ h1,h2,h3 {
   color: #00d8ca;
   font-weight: 100;
   font-size: 24pt;
+}
+
+h2 {
+  text-align: center;
 }
 
 button:focus {
@@ -37,26 +39,35 @@ img.circular {
   border-radius: 50%;
 }
 
-#logo {
+main {
+  margin: 0 auto;
+  max-width: 1000px;
+}
+
+section {
+  margin: 100px auto;
+}
+
+header {
   color: #fff;
   font-size: 24pt;
   font-weight: 100;
   margin-bottom: 100px;
-  padding-bottom: 10px;
+  padding: 10px;
   border-bottom: 1px solid rgba(255, 255, 255, 0.4);
   line-height: 1.2em;
 }
 
-#logo img {
+header img {
   height: 1.2em;
   vertical-align: bottom;
 }
 
-#logo span strong {
+header span strong {
   font-weight: 600;
 }
 
-#logo nav {
+header nav {
   float: right;
   color: #ccc;
   font-size: 12pt;
@@ -103,7 +114,7 @@ img.circular {
   flex-direction: row;
   align-items: center;
   justify-content: space-between;
-  margin: 50px 0;
+  margin: 20px 0;
 }
 
 #how-we-work > div:nth-child(even) {
@@ -147,9 +158,17 @@ img.circular {
   width: 90%;
 }
 
+#about-us > div p {
+  text-align: center;
+}
+
+#contact-us p {
+  text-align: center;
+}
+
 #contact-us form {
   width: 60%;
-  margin-left: 100px;
+  margin: 0 auto;
 }
 
 #contact-us input, #contact-us textarea, #contact-us button {
