@@ -24,24 +24,28 @@
   </head>
   <body>
     <header>
-      <img src="img/bonsaicon.svg" alt="logo" /><span>code<strong>bonsai</strong></span>
-      <nav>
-        <a href="#about-us">About Us</a>
-        <a href="#contact-us">Contact</a>
-      </nav>
+      <div class="container">
+        <img src="img/bonsaicon.svg" alt="logo" /><span>code<strong>bonsai</strong></span>
+        <nav>
+          <a href="#about-us">About Us</a>
+          <a href="#contact-us">Contact</a>
+        </nav>
+      </div>
     </header>
     <main>
       <section id="slogan">
-        <div>
-          <h1>Software crafted <br/> with care.</h1>
-          <p>
-              Codebonsai is a boutique software development studio focused on delivering great solutions through high quality craftsmanship. We have a passion for beautiful software and extensive industry experience in a wide range of successful software companies.            
-          </p>
+        <div class="container">
+          <div>
+            <h1>Software crafted <br/> with care.</h1>
+            <p>
+                Codebonsai is a boutique software development studio focused on delivering great solutions through high quality craftsmanship. We have a passion for beautiful software and extensive industry experience in a wide range of successful software companies.            
+            </p>
+          </div>
+          <img src="img/bonsai.svg" alt="bonsai" />
         </div>
-        <img src="img/bonsai.svg" alt="bonsai" />
       </section>
       <section id="how-we-work">
-        <div>
+        <div class="container">
           <img src="img/partners.svg" alt="partners" />
           <div>
             <h3>We care about your business.</h3>
@@ -50,7 +54,7 @@
             </p>
           </div>
         </div>
-        <div>
+        <div class="container">
           <img src="img/pragmatic.svg" alt="pragmatic" />
           <div>
             <h3>We find pragmatic solutions.</h3>
@@ -59,7 +63,7 @@
             </p>
           </div>
         </div>
-        <div>
+        <div class="container">
           <img src="img/tech.svg" alt="tech" />
           <div>
             <h3>We use reliable technologies.</h3>
@@ -72,7 +76,7 @@
       <section id="about-us">
         <a name="about-us"></a>
         <h2>Who are we?</h2>
-        <div>
+        <div class="container">
           <div>
             <img src="img/pibi.jpg" class="circular" alt="Rodrigo Pavano" />
             <h4>Rodrigo Pavano</h4>
@@ -105,18 +109,18 @@
         <form action="https://contact-form-api.codebonsai.io/message" method="POST">
           <div class="field">
             <label for="contact-us-name">Name:</label>
-            <input id="contact-us-name" type="text" name="name">
             <span class="error hidden">Please enter your name.</span>
+            <input id="contact-us-name" type="text" name="name">
           </div>
           <div class="field">
             <label for="contact-us-email">E-mail:</label>
-            <input id="contact-us-email" type="text" name="email">
             <span class="error hidden">Please enter an e-mail address.</span>
+            <input id="contact-us-email" type="text" name="email">
           </div>
           <div class="field">
             <label for="contact-us-message">Message:</label>
-            <textarea id="contact-us-message" name="message"></textarea>
             <span class="error hidden">Please enter a contact message.</span>
+            <textarea id="contact-us-message" name="message"></textarea>
           </div>
           <div class="submit">
             <button role="submit" type="submit" name="send"><span>Send!</span><img src="img/spinner.gif" alt="spinner" /></button>

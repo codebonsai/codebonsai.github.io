@@ -39,13 +39,13 @@ img.circular {
   border-radius: 50%;
 }
 
-main {
+.container {
   margin: 0 auto;
   max-width: 1000px;
 }
 
 section {
-  margin: 100px auto;
+  padding: 50px 0px;
 }
 
 header {
@@ -83,15 +83,14 @@ header nav a:hover {
   cursor: pointer;
 }
 
-#slogan {
+#slogan .container {
   display: flex;
   flex-direction: row;
   align-items: center;
   justify-content: space-between;
-  margin-bottom: 100px;
 }
 
-#slogan div {
+#slogan .container div {
   flex: 0.6;
 }
 
@@ -109,57 +108,70 @@ header nav a:hover {
   line-height: 1.6;
 }
 
-#how-we-work > div {
+#how-we-work {
+  background-color: #292929;
+}
+
+#how-we-work .container {
   display: flex;
   flex-direction: row;
   align-items: center;
   justify-content: space-between;
-  margin: 20px 0;
+  margin: 20px auto;
 }
 
-#how-we-work > div:nth-child(even) {
+#how-we-work .container:nth-child(even) {
   flex-direction: row-reverse;
 }
 
-#how-we-work > div img {
+#how-we-work .container img {
   flex: 0.3;
 }
 
-#how-we-work > div div {
+#how-we-work .container div {
   flex: 0.6;
 }
 
-#how-we-work > div p {
+#how-we-work .container p {
   margin: 20px 0;
   font-size: 16pt;
   line-height: 1.6;
 }
 
-#about-us > div {
+#about-us {
+  background-color: #333;
+}
+
+#about-us .container {
   display: flex;
   flex-direction: row;
   align-items: top;
   justify-content: space-between;
 }
 
-#about-us > div div {
+#about-us .container div {
   flex: 0.3;
 }
 
-#about-us > div h4 {
+#about-us h4 {
   color: #eee;
   text-align: center;
   font-weight: 300;
   font-size: 16pt;
 }
 
-#about-us > div img {
+#about-us img {
   margin: 0 5%;
   width: 90%;
 }
 
-#about-us > div p {
+#about-us p {
   text-align: top;
+}
+
+#contact-us {
+  background-color: #393939;
+  padding-bottom: 100px;
 }
 
 #contact-us p {
@@ -167,8 +179,9 @@ header nav a:hover {
 }
 
 #contact-us form {
-  width: 60%;
+  max-width: 550px;
   margin: 0 auto;
+  padding: 0 10px;
 }
 
 #contact-us input, #contact-us textarea, #contact-us button {
@@ -190,29 +203,20 @@ header nav a:hover {
 }
 
 #contact-us .field {
-  display: flex;
-  flex-direction: row;
-  align-items: center;
-  justify-content: space-between;
   margin: 10px 0;
   position: relative;
 }
 
 #contact-us label {
-  flex: 0.2;
   text-align: right;
-  padding-right: 10px;
 }
 
 #contact-us input, #contact-us textarea {
-  flex: 0.8;
+  width: 100%;
 }
 
 #contact-us .field .error {
-  position: absolute;
-  left: 100%;
-  padding-left: 10px;
-  white-space: nowrap;
+  float: right;
 }
 
 #contact-us textarea {
@@ -251,7 +255,6 @@ header nav a:hover {
 }
 
 footer {
-  margin-top: 100px;
   border-top: 1px solid rgba(255, 255, 255, 0.4);
   padding-top: 10px;
   font-size: 9pt;
