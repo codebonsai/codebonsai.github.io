@@ -147,6 +147,7 @@ header nav a:hover {
   flex-direction: row;
   align-items: top;
   justify-content: space-between;
+  text-align: center;
 }
 
 #about-us .container div {
@@ -165,17 +166,9 @@ header nav a:hover {
   width: 90%;
 }
 
-#about-us .social-logos {
-  text-align: center;
-}
-
 #about-us .social-logos img {
   width: 24px;
   padding: 0px 5px;
-}
-
-#about-us p {
-  text-align: top;
 }
 
 #contact-us {
@@ -268,4 +261,24 @@ footer {
   padding-top: 10px;
   font-size: 9pt;
   text-align: center;
+}
+
+@media only screen and (max-width: 650px) {
+  header {
+    margin-bottom: 50px;
+  }
+  
+  #slogan img, #how-we-work img {
+    display: none;
+  }
+
+  #slogan .container, #how-we-work .container {
+    display: block;
+    text-align: center;
+  }
+
+  #about-us .container {
+    flex-direction: column;
+    width: 90%;
+  }
 }
