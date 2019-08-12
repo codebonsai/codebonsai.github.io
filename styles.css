@@ -178,12 +178,13 @@ header nav a:hover {
 
 #contact-us p {
   text-align: center;
+  margin: 0 10px;
 }
 
 #contact-us form {
   max-width: 550px;
   margin: 0 auto;
-  padding: 0 10px;
+  padding: 0 20px;
 }
 
 #contact-us input, #contact-us textarea, #contact-us button {
@@ -281,4 +282,13 @@ footer {
     flex-direction: column;
     width: 90%;
   }
+
+  #contact-us .submit button {
+    width: 30%;
+  }
+
+  #contact-us .submit .success, #contact-us .submit .error {
+    line-height: inherit;
+    max-width: 65%;
+  }  
 }
