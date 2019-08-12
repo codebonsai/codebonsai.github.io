@@ -1,52 +1,42 @@
-@import url('https://fonts.googleapis.com/css?family=Roboto:100,300,600');
-
+@import url("https://fonts.googleapis.com/css?family=Roboto:100,300,600");
 body {
   font-family: 'Roboto', sans-serif;
-  font-weight: 300;
+  font-weight: 100;
   color: #bbbbbb;
   scroll-behavior: smooth;
   background-color: #222;
-}
+  margin: 0px; }
 
 a {
   color: inherit;
-  text-decoration: inherit;
-}
+  text-decoration: inherit; }
 
 h1, h2, h3 {
   color: #00d8ca;
   font-weight: 100;
-  font-size: 32px;
-}
+  font-size: 32px; }
 
 h2 {
-  text-align: center;
-}
+  text-align: center; }
 
 button:focus {
-  outline:none;
-}
+  outline: none; }
 
 button::-moz-focus-inner {
-  border:0;
-}
+  border: 0; }
 
 .hidden {
-  display: none;
-}
+  display: none; }
 
 img.circular {
-  border-radius: 50%;
-}
+  border-radius: 50%; }
 
 .container {
   margin: 0 auto;
-  max-width: 1000px;
-}
+  max-width: 1000px; }
 
 section {
-  padding: 50px 0px;
-}
+  padding: 50px 0px; }
 
 header {
   color: #fff;
@@ -55,137 +45,115 @@ header {
   margin-bottom: 100px;
   padding: 10px;
   border-bottom: 1px solid rgba(255, 255, 255, 0.4);
-  line-height: 1.2em;
-}
+  line-height: 1.2em; }
 
 header img {
   height: 1.2em;
-  vertical-align: bottom;
-}
+  vertical-align: bottom; }
 
 header span strong {
-  font-weight: 600;
-}
+  font-weight: 600; }
 
 header nav {
   float: right;
   color: #ccc;
   font-size: 16px;
-  text-transform: uppercase;
-}
+  text-transform: uppercase; }
 
 header nav a {
-  margin: 0 5px;
-}
+  margin: 0 5px; }
 
 header nav a:hover {
   color: #fff;
-  cursor: pointer;
-}
+  cursor: pointer; }
 
 #slogan .container {
   display: flex;
   flex-direction: row;
   align-items: center;
-  justify-content: space-between;
-}
+  justify-content: space-between; }
 
 #slogan .container div {
-  flex: 0.6;
-}
+  flex: 0.6; }
 
 #slogan img {
-  flex: 0.4;
-}
+  flex: 0.4; }
 
 #slogan h1 {
   font-size: 80px;
-  margin: 0;
-}
+  margin: 0; }
 
 #slogan p {
   font-size: 21px;
-  line-height: 1.6;
-}
+  line-height: 1.6; }
 
 #how-we-work {
-  background-color: #292929;
-}
+  background-color: #292929; }
 
 #how-we-work .container {
   display: flex;
   flex-direction: row;
   align-items: center;
   justify-content: space-between;
-  margin: 20px auto;
-}
+  margin: 20px auto; }
 
 #how-we-work .container:nth-child(even) {
-  flex-direction: row-reverse;
-}
+  flex-direction: row-reverse; }
 
 #how-we-work .container img {
-  flex: 0.3;
-}
+  flex: 0.3; }
 
 #how-we-work .container div {
-  flex: 0.6;
-}
+  flex: 0.6; }
 
 #how-we-work .container p {
   margin: 20px 0;
   font-size: 21px;
-  line-height: 1.6;
-}
+  line-height: 1.6; }
 
 #about-us {
-  background-color: #333;
-}
+  background-color: #333; }
 
 #about-us .container {
   display: flex;
   flex-direction: row;
   align-items: top;
-  justify-content: space-between;
-  text-align: center;
-}
+  justify-content: space-between; }
 
 #about-us .container div {
-  flex: 0.3;
-}
+  flex: 0.3; }
 
 #about-us h4 {
   color: #eee;
   text-align: center;
   font-weight: 300;
-  font-size: 21px;
-}
+  font-size: 21px; }
 
 #about-us img.mugshot {
   margin: 0 5%;
-  width: 90%;
-}
+  width: 90%; }
+
+#about-us .social-logos {
+  text-align: center; }
 
 #about-us .social-logos img {
   width: 24px;
-  padding: 0px 5px;
-}
+  padding: 0px 5px; }
+
+#about-us p {
+  text-align: top; }
 
 #contact-us {
   background-color: #393939;
-  padding-bottom: 100px;
-}
+  padding-bottom: 100px; }
 
 #contact-us p {
-  text-align: center;
-  margin: 0 10px;
-}
+  text-align: center; }
 
 #contact-us form {
   max-width: 550px;
   margin: 0 auto;
-  padding: 0 20px;
-}
+  padding: 0 10px; }
 
 #contact-us input, #contact-us textarea, #contact-us button {
   font-family: inherit;
@@ -194,101 +162,140 @@ header nav a:hover {
   background-color: #333;
   border: 1px solid #555;
   border-radius: 5px;
-  padding: 5px;
-}
+  padding: 5px; }
 
 #contact-us .error {
-  color: #c00;
-}
+  color: #c00; }
 
 #contact-us .success {
-  color: #00d8ca;
-}
+  color: #00d8ca; }
 
 #contact-us .field {
   margin: 10px 0;
-  position: relative;
-}
+  position: relative; }
 
 #contact-us label {
   text-align: right;
-}
+  line-height: 1.25em; }
 
 #contact-us input, #contact-us textarea {
-  width: 100%;
-}
+  width: 100%; }
 
 #contact-us .field .error {
-  float: right;
-}
+  float: right; }
 
 #contact-us textarea {
-  height: 150px;
-}
+  height: 150px; }
 
-#contact-us .submit button {
-  background-color: #00d8ca;
-  width: 20%;
-  font-size: 21px;
-  float: right;
-  margin-left: 10px;
-  height: 44px;
-}
+#contact-us .submit {
+  text-align: right; }
+  #contact-us .submit button {
+    background-color: #00d8ca;
+    width: 20%;
+    font-size: 21px;
+    margin-left: 10px;
+    height: 44px; }
 
 #contact-us .submit button img {
-  display: none;
-}
+  display: none; }
 
 #contact-us .submit button.disabled {
   background-color: #ccc;
-  color: #aaa;
-}
+  color: #aaa; }
 
 #contact-us .submit button.disabled span {
-  display: none;
-}
+  display: none; }
 
 #contact-us .submit button.disabled img {
-  display: inline;
-}
+  display: inline; }
 
 #contact-us .submit .success, #contact-us .submit .error {
   float: right;
-  line-height: 44px;
-}
+  line-height: 44px; }
 
 footer {
   border-top: 1px solid rgba(255, 255, 255, 0.4);
-  padding-top: 10px;
+  padding: 16px 8px;
   font-size: 12px;
-  text-align: center;
-}
+  text-align: center; }
 
-@media only screen and (max-width: 650px) {
+@media (max-width: 768px) {
+  body {
+    margin: 0; }
+
   header {
-    margin-bottom: 50px;
-  }
-  
-  #slogan img, #how-we-work img {
-    display: none;
-  }
+    border: none;
+    font-size: 30px;
+    margin-bottom: 0;
+    line-height: 1.25em; }
 
-  #slogan .container, #how-we-work .container {
+  header .container > nav {
+    display: none; }
+
+  #slogan, #how-we-work, #about-us, #contact-us {
+    padding: 42px 0.5em 45px 0.5em; }
+    #slogan img.section-graphic, #how-we-work img.section-graphic, #about-us img.section-graphic, #contact-us img.section-graphic {
+      display: none; }
+    #slogan h3, #how-we-work h3, #about-us h3, #contact-us h3 {
+      font-size: 30px;
+      margin: 0 0 0.25em 0; }
+    #slogan .container, #how-we-work .container, #about-us .container, #contact-us .container {
+      margin: 0; }
+      #slogan .container div, #how-we-work .container div, #about-us .container div, #contact-us .container div {
+        flex: 1; }
+      #slogan .container p, #how-we-work .container p, #about-us .container p, #contact-us .container p {
+        line-height: 1.25em;
+        margin: 0.25em 0 1em 0; }
+
+  #how-we-work .container p, #about-us .container p, #contact-us .container p {
+    font-size: 16px; }
+
+  #slogan h1 {
+    font-size: 60px; }
+  #slogan .container div {
+    flex: 1; }
+  #slogan .container p {
+    font-size: 20px; }
+  #slogan .container {
+    display: block; }
+  #slogan img.section-graphic {
     display: block;
-    text-align: center;
-  }
+    margin: 0 auto;
+    width: 50%; }
 
+  #how-we-work .container:last-of-type p {
+    margin-bottom: 0; }
+
+  #about-us h2 {
+    margin-top: 0;
+    margin-bottom: 28px; }
   #about-us .container {
-    flex-direction: column;
-    width: 90%;
-  }
+    display: block;
+    text-align: center; }
+  #about-us img.mugshot {
+    width: 50%; }
+  #about-us h4 {
+    margin-top: 0.5em;
+    margin-bottom: 0.25em; }
+  #about-us .partner {
+    margin-bottom: 48px; }
+    #about-us .partner p {
+      margin-top: 0.75em;
+      margin-bottom: 0; }
+  #about-us .partner:last-of-type {
+    margin-bottom: 0; }
 
-  #contact-us .submit button {
-    width: 30%;
-  }
+  #contact-us {
+    padding-bottom: 30px; }
+    #contact-us h2 {
+      margin: 0 auto; }
+    #contact-us p {
+      margin-top: 0.25em;
+      margin-bottom: 2em; }
+    #contact-us .field input, #contact-us .field textarea {
+      width: 96%;
+      padding: 2%; }
+    #contact-us .submit button {
+      font-size: 16px; } }
 
-  #contact-us .submit .success, #contact-us .submit .error {
-    line-height: inherit;
-    max-width: 65%;
-  }  
-}
+/*# sourceMappingURL=styles.css.map */
