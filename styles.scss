@@ -326,10 +326,14 @@ footer {
   #how-we-work {
     text-align: center;
 
-    p { font-size: $font-size-content; }
+    .container {
+      p {
+        font-size: $font-size-content;
+      }
 
-    .container:last-of-type p {
-      margin-bottom: 0;
+      &:last-of-type p {
+        margin-bottom: 0;
+      }
     }
 
     h3 {

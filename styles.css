@@ -206,7 +206,7 @@ footer {
 
   #how-we-work {
     text-align: center; }
-    #how-we-work p {
+    #how-we-work .container p {
       font-size: 16px; }
     #how-we-work .container:last-of-type p {
       margin-bottom: 0; }
