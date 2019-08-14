@@ -206,6 +206,8 @@ footer {
 
   #how-we-work {
     text-align: center; }
+    #how-we-work p {
+      font-size: 16px; }
     #how-we-work .container:last-of-type p {
       margin-bottom: 0; }
     #how-we-work h3 {
